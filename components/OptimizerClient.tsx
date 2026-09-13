@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Panel, RankBadge } from "./ui";
+import { Panel, RankBadge, SortSelect } from "./ui";
 import {
   rankCards,
   formatMoney,
@@ -26,11 +26,28 @@ const SPEND_PRESETS = [100, 250, 500, 1000, 2500];
 export default function OptimizerClient({ cards }: { cards: OptimizerCard[] }) {
   const [category, setCategory] = useState<Category>("dining");
   const [monthlySpend, setMonthlySpend] = useState(500);
-
-  const ranked = useMemo(
-    () => rankCards(cards, category, monthlySpend),
-    [cards, category, monthlySpend],
+  const [sort, setSort] = useState<"net" | "ppd" | "points" | "gross" | "fee">(
+    "net",
   );
+
+  const ranked = useMemo(() => {
+    const list = rankCards(cards, category, monthlySpend);
+    return [...list].sort((a, b) => {
+      switch (sort) {
+        case "ppd":
+          return b.pointsPerDollar - a.pointsPerDollar;
+        case "points":
+          return b.estAnnualPoints - a.estAnnualPoints;
+        case "gross":
+          return b.estAnnualValueCents - a.estAnnualValueCents;
+        case "fee":
+          return a.annualFeeCents - b.annualFeeCents;
+        case "net":
+        default:
+          return b.netAnnualValueCents - a.netAnnualValueCents;
+      }
+    });
+  }, [cards, category, monthlySpend, sort]);
 
   return (
     <div>
@@ -84,10 +101,25 @@ export default function OptimizerClient({ cards }: { cards: OptimizerCard[] }) {
             </div>
           </div>
         </div>
-        <p className="mt-3 text-xs text-slate-500">
-          Points valued at {POINT_VALUE_CENTS}¢ each. Net value = estimated
-          annual rewards − annual fee.
-        </p>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+          <p className="text-xs text-slate-500">
+            Points valued at {POINT_VALUE_CENTS}¢ each. Net value = estimated
+            annual rewards − annual fee.
+          </p>
+          <SortSelect
+            id="optimizer-sort"
+            label="Sort by"
+            value={sort}
+            onChange={setSort}
+            options={[
+              { value: "net", label: "Best net value / yr" },
+              { value: "ppd", label: "Most points per $" },
+              { value: "points", label: "Most total points / yr" },
+              { value: "gross", label: "Highest rewards value" },
+              { value: "fee", label: "Lowest annual fee" },
+            ]}
+          />
+        </div>
       </Panel>
 
       <div className="space-y-3">

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Panel, RankBadge } from "./ui";
+import { Panel, RankBadge, SortSelect } from "./ui";
 import { detectCategory } from "@/lib/category-detect";
 import {
   rankCards,
@@ -23,12 +23,26 @@ const QUICK_PICKS = [
 
 export default function AdvisorClient({ cards }: { cards: OptimizerCard[] }) {
   const [query, setQuery] = useState("");
+  const [sort, setSort] = useState<"net" | "ppd" | "points" | "fee">("net");
 
   const result = useMemo(() => {
     const detection = detectCategory(query);
     const ranked = rankCards(cards, detection.category, 200);
-    return { detection, ranked };
-  }, [cards, query]);
+    const sorted = [...ranked].sort((a, b) => {
+      switch (sort) {
+        case "ppd":
+          return b.pointsPerDollar - a.pointsPerDollar;
+        case "points":
+          return b.estAnnualPoints - a.estAnnualPoints;
+        case "fee":
+          return a.annualFeeCents - b.annualFeeCents;
+        case "net":
+        default:
+          return b.netAnnualValueCents - a.netAnnualValueCents;
+      }
+    });
+    return { detection, ranked: sorted };
+  }, [cards, query, sort]);
 
   const hasQuery = query.trim().length > 0;
 
@@ -69,16 +83,30 @@ export default function AdvisorClient({ cards }: { cards: OptimizerCard[] }) {
 
       {hasQuery && (
         <>
-          <div className="mb-4 flex items-center gap-2 text-sm">
-            <span className="text-slate-500">Detected category:</span>
-            <span className="rounded-full bg-brand-600 px-3 py-1 text-xs font-semibold text-white">
-              {CATEGORY_LABELS[result.detection.category]}
-            </span>
-            {result.detection.matchedKeyword && (
-              <span className="text-xs text-slate-400">
-                matched “{result.detection.matchedKeyword}”
+          <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+            <span className="flex items-center gap-2">
+              <span className="text-slate-500">Detected category:</span>
+              <span className="rounded-full bg-brand-600 px-3 py-1 text-xs font-semibold text-white">
+                {CATEGORY_LABELS[result.detection.category]}
               </span>
-            )}
+              {result.detection.matchedKeyword && (
+                <span className="text-xs text-slate-400">
+                  matched “{result.detection.matchedKeyword}”
+                </span>
+              )}
+            </span>
+            <SortSelect
+              id="advisor-sort"
+              label="Sort by"
+              value={sort}
+              onChange={setSort}
+              options={[
+                { value: "net", label: "Best net value" },
+                { value: "ppd", label: "Most points per $" },
+                { value: "points", label: "Most total points" },
+                { value: "fee", label: "Lowest annual fee" },
+              ]}
+            />
           </div>
 
           <div className="space-y-3">

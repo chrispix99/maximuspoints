@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Panel } from "./ui";
+import { Panel, SortSelect } from "./ui";
 import { formatMoney, type Category, CATEGORIES } from "@/lib/card-math";
 import type { CardMultipliers, PerkCadence } from "@/drizzle/schema";
 import { CADENCE_LABELS } from "@/lib/periods";
@@ -29,25 +29,67 @@ const MULT_LABELS: { key: Category; label: string }[] = CATEGORIES.map((c) => ({
   label: c.replace(/_/g, " "),
 }));
 
+/** Annualize a perk's dollar value from its cadence. */
+function perkAnnualValueCents(perk: {
+  amountCents: number;
+  cadence: PerkCadence;
+}): number {
+  const mult =
+    perk.cadence === "monthly"
+      ? 12
+      : perk.cadence === "quarterly"
+        ? 4
+        : perk.cadence === "semiannual"
+          ? 2
+          : 1;
+  return perk.amountCents * mult;
+}
+
+type CardSort = "fee-desc" | "fee-asc" | "perks-value" | "perks-count" | "name";
+
+const SORT_OPTIONS: { value: CardSort; label: string }[] = [
+  { value: "fee-desc", label: "Annual fee: high to low" },
+  { value: "fee-asc", label: "Annual fee: low to high" },
+  { value: "perks-value", label: "Highest perk value / yr" },
+  { value: "perks-count", label: "Most perks" },
+  { value: "name", label: "Name A–Z" },
+];
+
 export default function CardsClient({ cards }: { cards: CardWithPerks[] }) {
   const [issuer, setIssuer] = useState("all");
+  const [sort, setSort] = useState<CardSort>("fee-desc");
 
   const issuers = useMemo(
     () => ["all", ...Array.from(new Set(cards.map((c) => c.issuer))).sort()],
     [cards],
   );
 
-  const filtered = useMemo(
-    () =>
-      issuer === "all"
-        ? cards
-        : cards.filter((c) => c.issuer === issuer),
-    [cards, issuer],
-  );
+  const filtered = useMemo(() => {
+    const list =
+      issuer === "all" ? cards : cards.filter((c) => c.issuer === issuer);
+    return [...list].sort((a, b) => {
+      switch (sort) {
+        case "fee-asc":
+          return a.annualFee - b.annualFee;
+        case "perks-value": {
+          const va = a.perks.reduce((n, p) => n + perkAnnualValueCents(p), 0);
+          const vb = b.perks.reduce((n, p) => n + perkAnnualValueCents(p), 0);
+          return vb - va;
+        }
+        case "perks-count":
+          return b.perks.length - a.perks.length;
+        case "name":
+          return a.name.localeCompare(b.name);
+        case "fee-desc":
+        default:
+          return b.annualFee - a.annualFee;
+      }
+    });
+  }, [cards, issuer, sort]);
 
   return (
     <div>
-      <div className="mb-4 flex items-center gap-3">
+      <div className="mb-4 flex flex-wrap items-center gap-3">
         <label htmlFor="issuer" className="text-sm font-medium text-slate-700">
           Issuer
         </label>
@@ -63,9 +105,15 @@ export default function CardsClient({ cards }: { cards: CardWithPerks[] }) {
             </option>
           ))}
         </select>
+        <SortSelect
+          id="cards-sort"
+          label="Sort by"
+          value={sort}
+          onChange={setSort}
+          options={SORT_OPTIONS}
+        />
         <span className="text-xs text-slate-500">
-          {filtered.length} card{filtered.length === 1 ? "" : "s"} · sorted by
-          annual fee ↓
+          {filtered.length} card{filtered.length === 1 ? "" : "s"}
         </span>
       </div>
 
