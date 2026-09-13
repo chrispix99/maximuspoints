@@ -19,8 +19,7 @@ import portalsJson from "@/data/portals.json";
 export const dynamic = "force-dynamic";
 export const maxDuration = 300;
 
-const PORTAL_TABLE_SQL = `
-CREATE TABLE IF NOT EXISTS "portal_merchants" (
+const PORTAL_TABLE_SQL = `CREATE TABLE IF NOT EXISTS "portal_merchants" (
   "id" text PRIMARY KEY NOT NULL,
   "portal" text NOT NULL,
   "program" text,
@@ -31,9 +30,8 @@ CREATE TABLE IF NOT EXISTS "portal_merchants" (
   "portal_url" text,
   "source_url" text,
   "checked_at" timestamp
-);
-CREATE UNIQUE INDEX IF NOT EXISTS "portal_merchant_idx" ON "portal_merchants" USING btree ("portal","merchant");
-`;
+)`;
+const PORTAL_INDEX_SQL = `CREATE UNIQUE INDEX IF NOT EXISTS "portal_merchant_idx" ON "portal_merchants" USING btree ("portal","merchant")`;
 
 export async function POST(req: NextRequest) {
   const key = req.nextUrl.searchParams.get("key");
@@ -43,6 +41,7 @@ export async function POST(req: NextRequest) {
   try {
     const db = getDb();
     await db.execute(sql.raw(PORTAL_TABLE_SQL));
+    await db.execute(sql.raw(PORTAL_INDEX_SQL));
     const cards = normalizeCardList([
       { label: "premium", parsed: premium },
       { label: "midtier", parsed: midtier },
