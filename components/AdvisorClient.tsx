@@ -84,7 +84,26 @@ export default function AdvisorClient({
           return b.netAnnualValueCents - a.netAnnualValueCents;
       }
     });
-    return { detection, ranked: sorted, merchantBonuses: detectMerchant(query, portals) };
+    return {
+      detection,
+      ranked: sorted,
+      merchantBonuses: detectMerchant(query, portals),
+      stack: (() => {
+        const bonuses = detectMerchant(query, portals);
+        const portal = bonuses[0] ?? null;
+        if (!portal) return null;
+        const card = [...sorted].sort(
+          (a, b) => b.pointsPerDollar - a.pointsPerDollar,
+        )[0];
+        if (!card) return null;
+        return {
+          portal,
+          card,
+          total: portal.rate + card.pointsPerDollar,
+          alternatives: bonuses.slice(1, 4),
+        };
+      })(),
+    };
   }, [cards, query, sort, portals]);
 
   const hasQuery = query.trim().length > 0;
@@ -126,45 +145,40 @@ export default function AdvisorClient({
 
       {hasQuery && (
         <>
-          {result.merchantBonuses.length > 0 && (
+          {result.stack && (
             <Panel className="mb-4 border-brand-200 bg-brand-50">
               <h3 className="text-sm font-bold text-slate-900">
-                🛒 Stack a portal bonus at {result.merchantBonuses[0].merchant}
+                ⚡ Max stack at {result.stack.portal.merchant}
               </h3>
               <p className="mt-1 text-xs text-slate-600">
-                Click through one of these portals before checkout to earn extra
-                points <em>on top of</em> your card — paid by the portal, not
-                the card.
+                One portal per purchase — the merchant only credits the last
+                click-through, so take the best rate. Your card and the
+                store&apos;s free loyalty program always stack on top.
               </p>
-              <ul className="mt-2 space-y-1.5">
-                {result.merchantBonuses.slice(0, 4).map((b) => (
-                  <li
-                    key={b.portal}
-                    className="flex items-center justify-between gap-3 text-sm"
-                  >
-                    <span className="min-w-0">
-                      <span className="font-medium text-slate-800">
-                        {b.portal}
-                      </span>
-                      {b.program && (
-                        <span className="text-xs text-slate-500">
-                          {" "}
-                          · {b.program}
+              <ol className="mt-3 space-y-2.5 text-sm">
+                <li className="flex items-start gap-2.5">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-[11px] font-bold text-white">
+                    1
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span>
+                        Click through{" "}
+                        <span className="font-semibold text-slate-900">
+                          {result.stack.portal.portal}
                         </span>
-                      )}
-                    </span>
-                    <span className="flex shrink-0 items-center gap-2">
-                      <span className="rounded-full bg-brand-600 px-2.5 py-0.5 text-xs font-bold text-white">
-                        +{b.rate} /$
                       </span>
-                      {b.elevated && (
+                      <span className="rounded-full bg-brand-600 px-2.5 py-0.5 text-xs font-bold text-white">
+                        +{result.stack.portal.rate} /$
+                      </span>
+                      {result.stack.portal.elevated && (
                         <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-800">
                           boosted
                         </span>
                       )}
-                      {b.url && (
+                      {result.stack.portal.url && (
                         <a
-                          href={b.url}
+                          href={result.stack.portal.url}
                           target="_blank"
                           rel="noreferrer"
                           className="text-xs font-semibold text-brand-700 hover:underline"
@@ -172,10 +186,104 @@ export default function AdvisorClient({
                           Shop →
                         </a>
                       )}
+                    </div>
+                    {result.stack.portal.program && (
+                      <p className="text-xs text-slate-500">
+                        Earns {result.stack.portal.program} — paid by the
+                        portal, not the card.
+                      </p>
+                    )}
+                  </div>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-[11px] font-bold text-white">
+                    2
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <span>
+                      Pay with{" "}
+                      <span className="font-semibold text-slate-900">
+                        {result.stack.card.name}
+                      </span>{" "}
+                      →{" "}
+                      <span className="font-semibold text-slate-900">
+                        +{result.stack.card.pointsPerDollar} pts/$
+                      </span>
                     </span>
-                  </li>
-                ))}
-              </ul>
+                    <p className="text-xs text-slate-500">
+                      {result.stack.card.issuer} · top pick for{" "}
+                      {CATEGORY_LABELS[result.detection.category]}
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-600 text-[11px] font-bold text-white">
+                    3
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <span>
+                      Join {result.stack.portal.merchant}&apos;s free loyalty
+                      program — it still earns on portal click-throughs.
+                    </span>
+                  </div>
+                </li>
+              </ol>
+              <div className="mt-3 rounded-lg bg-white px-3 py-2.5 text-sm">
+                <span className="font-bold text-slate-900">
+                  ≈ {result.stack.total} pts/$ total
+                </span>
+                <span className="text-slate-600">
+                  {" "}
+                  — about {formatMoney(Math.round(result.stack.total * 100))}{" "}
+                  back per $100, split across{" "}
+                  {result.stack.portal.program ?? result.stack.portal.portal}{" "}
+                  and your card (valued at {POINT_VALUE_CENTS}¢/pt)
+                </span>
+              </div>
+              {result.stack.alternatives.length > 0 && (
+                <div className="mt-3">
+                  <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-500">
+                    Other portal rates
+                  </p>
+                  <ul className="mt-1.5 space-y-1.5">
+                    {result.stack.alternatives.map((b) => (
+                      <li
+                        key={b.portal}
+                        className="flex items-center justify-between gap-3 text-sm"
+                      >
+                        <span className="min-w-0 font-medium text-slate-700">
+                          {b.portal}
+                          {b.program && (
+                            <span className="text-xs font-normal text-slate-500">
+                              {" "}
+                              · {b.program}
+                            </span>
+                          )}
+                        </span>
+                        <span className="flex shrink-0 items-center gap-2">
+                          <span className="rounded-full bg-slate-200 px-2.5 py-0.5 text-xs font-bold text-slate-700">
+                            +{b.rate} /$
+                          </span>
+                          {b.url && (
+                            <a
+                              href={b.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-xs font-semibold text-brand-700 hover:underline"
+                            >
+                              Shop →
+                            </a>
+                          )}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <p className="mt-3 text-[11px] text-slate-500">
+                Tip: check Amex Offers / Chase Offers in your banking app too —
+                those usually stack as well.
+              </p>
               {result.merchantBonuses.some((b) => b.note) && (
                 <p className="mt-2 text-[11px] text-slate-500">
                   Note:{" "}
@@ -188,10 +296,10 @@ export default function AdvisorClient({
                   ].join(" · ")}
                 </p>
               )}
-              {result.merchantBonuses[0].checkedAt && (
+              {result.stack.portal.checkedAt && (
                 <p className="mt-2 text-[11px] text-slate-400">
                   Portal rates change often — last checked{" "}
-                  {result.merchantBonuses[0].checkedAt}.
+                  {result.stack.portal.checkedAt}.
                 </p>
               )}
             </Panel>
