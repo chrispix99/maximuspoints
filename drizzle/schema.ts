@@ -206,6 +206,8 @@ export const portalMerchants = pgTable(
     program: text("program"), // currency earned, e.g. "Atmos Rewards points"
     merchant: text("merchant").notNull(), // clean display name, e.g. "Nike"
     milesPerDollar: real("miles_per_dollar").notNull(),
+    elevated: boolean("elevated").notNull().default(false), // limited-time boosted rate
+    note: text("note"), // e.g. "United cardholder rate", "up to max rate"
     portalUrl: text("portal_url"),
     sourceUrl: text("source_url"),
     checkedAt: timestamp("checked_at", { mode: "date" }),

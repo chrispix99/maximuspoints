@@ -11,6 +11,8 @@ export interface RawPortalMerchant {
   name?: unknown;
   miles_per_dollar?: unknown;
   milesPerDollar?: unknown;
+  elevated?: unknown;
+  note?: unknown;
   source?: unknown;
 }
 
@@ -26,6 +28,8 @@ export interface RawPortal {
 export interface NormalizedPortalMerchant {
   merchant: string;
   milesPerDollar: number;
+  elevated: boolean;
+  note: string | null;
   sourceUrl: string | null;
 }
 
@@ -89,6 +93,8 @@ export function normalizePortalList(raw: unknown): NormalizedPortal[] {
           merchant,
           name,
         ),
+        elevated: m.elevated === true,
+        note: m.note ? String(m.note) : null,
         sourceUrl: m.source ? String(m.source) : null,
       });
     }
@@ -130,6 +136,8 @@ export async function seedPortals(
         program: p.program,
         merchant: m.merchant,
         milesPerDollar: m.milesPerDollar,
+        elevated: m.elevated,
+        note: m.note,
         portalUrl: p.portalUrl,
         sourceUrl: m.sourceUrl,
         checkedAt: p.checkedAt,

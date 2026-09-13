@@ -26,6 +26,8 @@ export interface PortalBonus {
   portal: string;
   program: string | null;
   rate: number;
+  elevated: boolean;
+  note: string | null;
   url: string | null;
   checkedAt: string | null;
 }
@@ -155,6 +157,11 @@ export default function AdvisorClient({
                       <span className="rounded-full bg-brand-600 px-2.5 py-0.5 text-xs font-bold text-white">
                         +{b.rate} /$
                       </span>
+                      {b.elevated && (
+                        <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-800">
+                          boosted
+                        </span>
+                      )}
                       {b.url && (
                         <a
                           href={b.url}
@@ -169,6 +176,18 @@ export default function AdvisorClient({
                   </li>
                 ))}
               </ul>
+              {result.merchantBonuses.some((b) => b.note) && (
+                <p className="mt-2 text-[11px] text-slate-500">
+                  Note:{" "}
+                  {[
+                    ...new Set(
+                      result.merchantBonuses
+                        .map((b) => b.note)
+                        .filter(Boolean) as string[],
+                    ),
+                  ].join(" · ")}
+                </p>
+              )}
               {result.merchantBonuses[0].checkedAt && (
                 <p className="mt-2 text-[11px] text-slate-400">
                   Portal rates change often — last checked{" "}

@@ -8,6 +8,8 @@ export interface PortalRow {
   portal: string;
   program: string | null;
   rate: number;
+  elevated: boolean;
+  note: string | null;
   url: string | null;
   checkedAt: string | null;
 }
@@ -113,6 +115,11 @@ export default function PortalsClient({ rows }: { rows: PortalRow[] }) {
               <span className="rounded-full bg-brand-600 px-3 py-1 text-sm font-bold text-white">
                 +{r.rate}/$
               </span>
+              {r.elevated && (
+                <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-800">
+                  boosted
+                </span>
+              )}
               {r.url && (
                 <a
                   href={r.url}
@@ -132,6 +139,16 @@ export default function PortalsClient({ rows }: { rows: PortalRow[] }) {
           </p>
         )}
       </div>
+      {filtered.some((r) => r.note) && (
+        <p className="mt-4 text-xs text-slate-500">
+          Notes:{" "}
+          {[
+            ...new Set(
+              filtered.map((r) => r.note).filter(Boolean) as string[],
+            ),
+          ].join(" · ")}
+        </p>
+      )}
     </div>
   );
 }

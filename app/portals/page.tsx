@@ -17,6 +17,8 @@ export default async function PortalsPage() {
       portal: r.portal,
       program: r.program,
       rate: r.milesPerDollar,
+      elevated: r.elevated,
+      note: r.note,
       url: r.portalUrl,
       checkedAt: r.checkedAt ? r.checkedAt.toISOString().slice(0, 10) : null,
     }));

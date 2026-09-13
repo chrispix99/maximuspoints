@@ -1,0 +1,904 @@
+{
+  "portals": [
+    {
+      "name": "Atmos Rewards Shopping",
+      "program": "Atmos Rewards points",
+      "url": "https://www.atmosshopping.com/",
+      "sources": [
+        "https://www.alaskaair.com/atmosrewards/content/partners/earn-everyday",
+        "https://thepointsguy.com/airline/how-to-earn-alaska-airlines-atmos-rewards-points/"
+      ],
+      "checked": "2026-09-13",
+      "notes": "REBRANDED: was 'Mileage Plan Shopping' (mileageplanshopping.com); now 'Atmos Rewards Shopping' at atmosshopping.com, earning Atmos Rewards points. shopping.alaskaair.com no longer resolves. Rates from Cashback Monitor Alaska Atmos column (last full update 2026-09-12). Elevated now: Nike 6 (base 2), Under Armour 5 (base 1), Adidas 4 (base 1), Lululemon 4 (base 2), Vrbo 4 (base 1), Athleta 3 (base 1), Sephora 3 (base 2). Apple Store promo 4x ended, back to 1. Omitted: 'up-to' tiered rates (Macy's, CVS, Sam's Club, Samsung, Best Buy, Home Depot), flat offers (Uber Eats, DoorDash), no-rate rows (Walmart, Dell, Nordstrom direct, Etsy, Expedia, IHG, Wayfair, Costco, Coach, Target, Ticketmaster, Fandango, Hyatt, HelloFresh, REI).",
+      "merchants": [
+        {
+          "name": "Adidas",
+          "miles_per_dollar": 4,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Apple",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Athleta",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Backcountry",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/"
+        },
+        {
+          "name": "Banana Republic",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/"
+        },
+        {
+          "name": "Chewy",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
+        },
+        {
+          "name": "Columbia",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
+        },
+        {
+          "name": "eBay",
+          "miles_per_dollar": 0.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/e/"
+        },
+        {
+          "name": "Gap",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/g/"
+        },
+        {
+          "name": "HP",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/h/"
+        },
+        {
+          "name": "Instacart",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/i/"
+        },
+        {
+          "name": "LEGO",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lenovo",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lowe's",
+          "miles_per_dollar": 0.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lululemon",
+          "miles_per_dollar": 4,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Marriott",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/m/"
+        },
+        {
+          "name": "Michael Kors",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/m/"
+        },
+        {
+          "name": "Nike",
+          "miles_per_dollar": 6,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/n/"
+        },
+        {
+          "name": "Old Navy",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/o/"
+        },
+        {
+          "name": "Overstock",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/o/"
+        },
+        {
+          "name": "Petco",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/p/"
+        },
+        {
+          "name": "Sephora",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/"
+        },
+        {
+          "name": "StubHub",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/"
+        },
+        {
+          "name": "Under Armour",
+          "miles_per_dollar": 5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/u/"
+        },
+        {
+          "name": "Vrbo",
+          "miles_per_dollar": 4,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/v/"
+        },
+        {
+          "name": "Walgreens",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/w/"
+        }
+      ]
+    },
+    {
+      "name": "American Airlines AAdvantage eShopping",
+      "program": "AAdvantage miles",
+      "url": "https://aadvantageeshopping.com/",
+      "sources": [
+        "https://aadvantageeshopping.com/",
+        "https://thepointsguy.com/news/american-airlines-shopping-portal/"
+      ],
+      "checked": "2026-09-13",
+      "notes": "Portal merchant pages are JS-rendered; rates from Cashback Monitor travel-miles comparison (last full update 2026-09-12). Elevated now: Adidas 3.5 (was 1), Athleta 3 (was 1.5), Nike 3 (was 2), Overstock 1.5 (was 1), Sephora 3 (was 2), Under Armour 5 (was 1.5), Vrbo 3.5 (was 1.5). Apple dropped from 3.5 (TPG ~Sep 7) to 1. Omitted: tiered 'up-to' rates (Best Buy, Sam's Club, Home Depot, Macy's, CVS, Samsung) and fixed-bonus offers (HelloFresh).",
+      "merchants": [
+        {
+          "name": "Adidas",
+          "miles_per_dollar": 3.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Apple",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Athleta",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Backcountry",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/"
+        },
+        {
+          "name": "Banana Republic",
+          "miles_per_dollar": 1.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/"
+        },
+        {
+          "name": "Chewy",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
+        },
+        {
+          "name": "Columbia",
+          "miles_per_dollar": 1.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
+        },
+        {
+          "name": "Disney Store",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/d/"
+        },
+        {
+          "name": "eBay",
+          "miles_per_dollar": 0.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/e/"
+        },
+        {
+          "name": "Gap",
+          "miles_per_dollar": 1.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/g/"
+        },
+        {
+          "name": "HP",
+          "miles_per_dollar": 1.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/h/"
+        },
+        {
+          "name": "IHG",
+          "miles_per_dollar": 1.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/i/"
+        },
+        {
+          "name": "Instacart",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/i/"
+        },
+        {
+          "name": "LEGO",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lenovo",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lowe's",
+          "miles_per_dollar": 0.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lululemon",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Marriott",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/m/"
+        },
+        {
+          "name": "Michael Kors",
+          "miles_per_dollar": 1.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/m/"
+        },
+        {
+          "name": "Nike",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/n/"
+        },
+        {
+          "name": "Old Navy",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/o/"
+        },
+        {
+          "name": "Overstock",
+          "miles_per_dollar": 1.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/o/"
+        },
+        {
+          "name": "Petco",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/p/"
+        },
+        {
+          "name": "Sephora",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/"
+        },
+        {
+          "name": "StubHub",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/"
+        },
+        {
+          "name": "Under Armour",
+          "miles_per_dollar": 5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/u/"
+        },
+        {
+          "name": "Vrbo",
+          "miles_per_dollar": 3.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/v/"
+        },
+        {
+          "name": "Walgreens",
+          "miles_per_dollar": 1.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/w/"
+        }
+      ]
+    },
+    {
+      "name": "United MileagePlus Shopping",
+      "program": "MileagePlus miles",
+      "url": "https://shopping.mileageplus.com/",
+      "sources": [
+        "https://shopping.mileageplus.com/",
+        "https://www.cashbackmonitor.com/"
+      ],
+      "checked": "2026-09-13",
+      "notes": "Cashback Monitor's public comparison pages show the United CARDHOLDER ('ua cc') column only; non-cardholder rates are JS-gated. All rates below except Apple are United credit-card-holder rates. Elevated now: Nike 8 (was 2), Adidas 4 (was 1), Sephora 3 (was 2), Fandango 4 (was 2), Apple 4 (promo, TPG Sep 7). 'Up to' max rates: Best Buy 8, Sam's Club 8, Macy's 3, Expedia 2, Samsung 2 \u2014 actual may be lower by category.",
+      "merchants": [
+        {
+          "name": "Apple",
+          "miles_per_dollar": 4,
+          "source": "http://Thepointsguy.com/deals/apple-purchases-shopping-portal/",
+          "elevated": true
+        },
+        {
+          "name": "Adidas",
+          "miles_per_dollar": 4,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/",
+          "elevated": true,
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "Backcountry",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/",
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "Banana Republic",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/",
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "Best Buy",
+          "miles_per_dollar": 8,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/",
+          "note": "United cardholder rate; 'up to' max, actual may be lower"
+        },
+        {
+          "name": "eBay",
+          "miles_per_dollar": 0.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/e/",
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "Expedia",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/e/",
+          "note": "United cardholder rate; 'up to' max, actual may be lower"
+        },
+        {
+          "name": "Fandango",
+          "miles_per_dollar": 4,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/f/",
+          "elevated": true,
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "Macy's",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/m/",
+          "note": "United cardholder rate; 'up to' max, actual may be lower"
+        },
+        {
+          "name": "Marriott",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/m/",
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "Michael Kors",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/m/",
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "Nike",
+          "miles_per_dollar": 8,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/n/",
+          "elevated": true,
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "Sam's Club",
+          "miles_per_dollar": 8,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/",
+          "note": "United cardholder rate; 'up to' max, actual may be lower"
+        },
+        {
+          "name": "Samsung",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/",
+          "note": "United cardholder rate; 'up to' max, actual may be lower"
+        },
+        {
+          "name": "Sephora",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/",
+          "elevated": true,
+          "note": "United cardholder rate"
+        },
+        {
+          "name": "StubHub",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/",
+          "note": "United cardholder rate"
+        }
+      ]
+    },
+    {
+      "name": "Delta SkyMiles Shopping",
+      "program": "SkyMiles",
+      "url": "https://www.skymilesshopping.com/",
+      "sources": [
+        "http://content.delta.com/content/www/us/en/skymiles/how-to-earn-miles/skymiles-partners-offers.html",
+        "https://thepointsguy.com/loyalty-programs/delta-skymiles-shopping-portal/"
+      ],
+      "checked": "2026-09-13",
+      "notes": "Thin coverage: Cashback Monitor comparison pages carry NO Delta column (only Alaska Atmos, AA, Southwest, United-cardholder); Delta requires per-merchant store pages. Apple 3.5 is an elevated promo (base 1, TPG ~Sep 7). Portal verified live at skymilesshopping.com. Dropped a stale Lenovo 1.5 (EvReward snippet ~109 days old). Remaining merchants unverifiable this pass \u2014 revisit on refresh.",
+      "merchants": [
+        {
+          "name": "Apple",
+          "miles_per_dollar": 3.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Adidas",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        }
+      ]
+    },
+    {
+      "name": "Southwest Rapid Rewards Shopping",
+      "program": "Rapid Rewards points",
+      "url": "https://rapidrewardsshopping.southwest.com",
+      "sources": [
+        "https://rapidrewardsshopping.southwest.com",
+        "http://thepointsguy.com/loyalty-programs/southwest-rapid-rewards-shopping-portal/"
+      ],
+      "checked": "2026-09-13",
+      "notes": "Portal merchant pages blocked by EEA interstitial; rates from Cashback Monitor Southwest column (last full update 2026-09-12). Elevated now: Under Armour 5 (base 1), Adidas 3 (base 1), Athleta 3 (base 1), Nike 3 (base 2), Sephora 3 (base 2). Omitted: 'up-to' tiered rates (Best Buy, Home Depot, Macy's, Sam's Club, Samsung), flat-point offers (HelloFresh, Uber Eats, Disney+), blank columns (Dell, IHG, Marriott, Vrbo, Walmart).",
+      "merchants": [
+        {
+          "name": "Nike",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/n/"
+        },
+        {
+          "name": "Adidas",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Apple",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Athleta",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Backcountry",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/"
+        },
+        {
+          "name": "Banana Republic",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/b/"
+        },
+        {
+          "name": "Chewy",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
+        },
+        {
+          "name": "Columbia",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
+        },
+        {
+          "name": "CVS",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
+        },
+        {
+          "name": "Disney Store",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/d/"
+        },
+        {
+          "name": "eBay",
+          "miles_per_dollar": 0.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/e/"
+        },
+        {
+          "name": "Gap",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/g/"
+        },
+        {
+          "name": "HP",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/h/"
+        },
+        {
+          "name": "Instacart",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/i/"
+        },
+        {
+          "name": "LEGO",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lenovo",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lowe's",
+          "miles_per_dollar": 0.5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Lululemon",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/l/"
+        },
+        {
+          "name": "Michael Kors",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/m/"
+        },
+        {
+          "name": "Old Navy",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/o/"
+        },
+        {
+          "name": "Overstock",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/o/"
+        },
+        {
+          "name": "Petco",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/p/"
+        },
+        {
+          "name": "Sephora",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/"
+        },
+        {
+          "name": "StubHub",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/"
+        },
+        {
+          "name": "Under Armour",
+          "miles_per_dollar": 5,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/u/"
+        },
+        {
+          "name": "Walgreens",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/w/"
+        }
+      ]
+    },
+    {
+      "name": "Chase Ultimate Rewards Shopping",
+      "program": "Ultimate Rewards points",
+      "url": "https://creditcards.chase.com/rewards-credit-cards/ultimate-rewards",
+      "sources": [
+        "https://www.cashbackmonitor.com/",
+        "https://thepointsguy.com/credit-cards/chase-ultimate-rewards-shopping-portal/"
+      ],
+      "checked": "2026-09-13",
+      "notes": "Rates vary by card (Sapphire column used; Freedom often pays more). Best Buy/Home Depot/Macy's/Sam's Club show 'up to' rates; JSON uses max. Source: Cashback Monitor Chase tables, last full update 2026-09-12, read 2026-09-13.",
+      "merchants": [
+        {
+          "name": "Adidas",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/",
+          "elevated": true
+        },
+        {
+          "name": "Apple",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Athleta",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/",
+          "elevated": true
+        },
+        {
+          "name": "Backcountry",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Banana Republic",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Best Buy",
+          "miles_per_dollar": 7,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Chewy",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Columbia",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "CVS",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Disney Store",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "eBay",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Gap",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Home Depot",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "HP",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Instacart",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "LEGO",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Lenovo",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Lowe's",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Lululemon",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Macy's",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Michael Kors",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Nike",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/",
+          "elevated": true
+        },
+        {
+          "name": "Old Navy",
+          "miles_per_dollar": 2,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Overstock",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Petco",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Sam's Club",
+          "miles_per_dollar": 7,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Samsung",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Sephora",
+          "miles_per_dollar": 3,
+          "source": "https://www.cashbackmonitor.com/",
+          "elevated": true
+        },
+        {
+          "name": "Under Armour",
+          "miles_per_dollar": 5,
+          "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Walgreens",
+          "miles_per_dollar": 1,
+          "source": "https://www.cashbackmonitor.com/"
+        }
+      ]
+    },
+    {
+      "name": "Rakuten (Amex Membership Rewards)",
+      "program": "Membership Rewards points",
+      "url": "https://www.rakuten.com",
+      "sources": [
+        "https://www.rakuten.com/help/article/american-express-membership-rewards-points-faq-360017609253",
+        "https://thepointsguy.com/loyalty-programs/how-to-use-rakuten/"
+      ],
+      "checked": "2026-09-13",
+      "notes": "1% cash back = 1 MR point/$. Must link eligible Amex MR account; points transfer quarterly (min 501). Elevated now: Nike 6 (was 2), Adidas 4 (was 2), Disney Store 5 (was 2, was 6 earlier this week), Athleta 4 (was 2), Best Buy up to 10 (was 7), Macy's 4 (was 2). Zero-rate merchants (Nordstrom, Home Depot, REI, Lululemon, Wayfair, Walmart) dropped. Some per-merchant source URLs from researcher looked mismatched and were normalized to rakuten shop slugs \u2014 re-verify on next refresh.",
+      "merchants": [
+        {
+          "name": "Nike",
+          "miles_per_dollar": 6,
+          "source": "https://www.rakuten.com/store/nike"
+        },
+        {
+          "name": "Adidas",
+          "miles_per_dollar": 4,
+          "source": "https://www.rakuten.com/store/adidas"
+        },
+        {
+          "name": "Apple",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/store/apple"
+        },
+        {
+          "name": "Sephora",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/store/sephora"
+        },
+        {
+          "name": "Macy's",
+          "miles_per_dollar": 4,
+          "source": "https://www.rakuten.com/shop/macys"
+        },
+        {
+          "name": "Best Buy",
+          "miles_per_dollar": 10,
+          "source": "https://www.rakuten.com/shop/bestbuy"
+        },
+        {
+          "name": "Lowe's",
+          "miles_per_dollar": 1,
+          "source": "https://www.rakuten.com/shop/lowes"
+        },
+        {
+          "name": "Samsung",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/samsung"
+        },
+        {
+          "name": "Lenovo",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/lenovo"
+        },
+        {
+          "name": "Backcountry",
+          "miles_per_dollar": 3,
+          "source": "https://www.rakuten.com/shop/backcountry"
+        },
+        {
+          "name": "Gap",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/gap"
+        },
+        {
+          "name": "Old Navy",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/oldnavy"
+        },
+        {
+          "name": "Sam's Club",
+          "miles_per_dollar": 4,
+          "source": "https://www.rakuten.com/shop/samsclub"
+        },
+        {
+          "name": "Walgreens",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/walgreens"
+        },
+        {
+          "name": "Chewy",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/chewy"
+        },
+        {
+          "name": "Overstock",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/overstock"
+        },
+        {
+          "name": "LEGO",
+          "miles_per_dollar": 2.5,
+          "source": "https://www.rakuten.com/shop/lego"
+        },
+        {
+          "name": "Under Armour",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/underarmour"
+        },
+        {
+          "name": "Columbia",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/columbiasportswear"
+        },
+        {
+          "name": "Michael Kors",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/michaelkors"
+        },
+        {
+          "name": "StubHub",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/stubhub"
+        },
+        {
+          "name": "Disney Store",
+          "miles_per_dollar": 5,
+          "source": "https://www.rakuten.com/shop/disneystore"
+        },
+        {
+          "name": "Petco",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/petco"
+        },
+        {
+          "name": "Coach",
+          "miles_per_dollar": 2,
+          "source": "https://www.rakuten.com/shop/coach"
+        },
+        {
+          "name": "Athleta",
+          "miles_per_dollar": 4,
+          "source": "https://www.rakuten.com/shop/athleta"
+        },
+        {
+          "name": "CVS",
+          "miles_per_dollar": 5,
+          "source": "https://www.rakuten.com/store/cvs"
+        },
+        {
+          "name": "Instacart",
+          "miles_per_dollar": 1,
+          "source": "https://www.rakuten.com/shop/instacart"
+        },
+        {
+          "name": "eBay",
+          "miles_per_dollar": 1,
+          "source": "https://www.rakuten.com/shop/ebay"
+        },
+        {
+          "name": "Target",
+          "miles_per_dollar": 1,
+          "source": "https://www.rakuten.com/shop/target"
+        }
+      ]
+    }
+  ]
+}
