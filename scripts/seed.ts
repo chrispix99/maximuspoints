@@ -7,6 +7,10 @@
  *   data/cards_premium.json
  *   data/cards_midtier.json
  *   data/cards_gapfill.json
+ *   data/cards_nofee.json
+ *   data/cards_cobrands.json
+ *   data/cards_business.json
+ *   data/cards_store.json
  *
  * Run: npm run db:seed   (needs DATABASE_URL)
  * Run: npm run db:seed -- --dry-run   (validate files only, no DB needed)
@@ -23,6 +27,10 @@ const INPUT_FILES = [
   "cards_premium.json",
   "cards_midtier.json",
   "cards_gapfill.json",
+  "cards_nofee.json",
+  "cards_cobrands.json",
+  "cards_business.json",
+  "cards_store.json",
 ].map((f) => resolve(RESEARCH_DIR, f));
 
 async function main() {

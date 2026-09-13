@@ -1,0 +1,752 @@
+{"cards": [
+  {
+    "annual_fee": 0,
+    "details": "Earns 3% on dining, 5% on travel purchased through Chase Travel, and 1.5% on all other purchases. Charges a 3% foreign transaction fee. Verified current as of Sept. 13, 2026.",
+    "foreign_transaction_fee": true,
+    "issuer": "Chase",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 3,
+      "everyday": 1.5,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Chase Freedom Unlimited",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 200,
+        "cadence": "annual",
+        "details": "Earn $200 cash back after $500 in purchases in the first 3 months of account opening.",
+        "name": "Welcome bonus"
+      },
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Earn 5% cash back on travel purchased through Chase Travel (portal rate; not encoded in the travel multiplier).",
+        "name": "Chase Travel bonus rate"
+      }
+    ],
+    "sources": [
+      "https://www.fool.com/money/credit-cards/chase/chase-freedom-unlimited-review/",
+      "https://www.cnn.com/cnn-underscored/money/chase-freedom-unlimited-vs-flex?cid=external-feeds_iluminar_meta",
+      "https://www.nerdwallet.com/credit-cards/learn/benefits-of-the-chase-freedom-and-chase-freedom-unlimited"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 3% on dining and 5% on travel purchased through Chase Travel. Rotating 5% quarterly bonus categories require activation and are capped at $1,500 in combined purchases per quarter (1% thereafter); these temporary rates are not encoded as permanent multipliers. Charges foreign transaction fees as of Sept. 13, 2026; Chase removes foreign transaction fees and the cell phone protection benefit on Sept. 20, 2026.",
+    "foreign_transaction_fee": true,
+    "issuer": "Chase",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 3,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Chase Freedom Flex",
+    "network": "Mastercard",
+    "perks": [
+      {
+        "amount": 200,
+        "cadence": "annual",
+        "details": "Earn $200 cash back after $500 in purchases in the first 3 months of account opening.",
+        "name": "Welcome bonus"
+      },
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Earn 5% cash back on travel purchased through Chase Travel (portal rate; not encoded in the travel multiplier).",
+        "name": "Chase Travel bonus rate"
+      },
+      {
+        "amount": 800,
+        "cadence": "annual",
+        "details": "Up to $800 per claim ($1,000 per year, $50 deductible) for cell phone damage or theft when you pay your monthly cell phone bill with the card. This benefit ends Sept. 20, 2026.",
+        "name": "Cell phone protection"
+      }
+    ],
+    "sources": [
+      "https://www.fool.com/money/credit-cards/chase/chase-freedom-flex-review/",
+      "https://www.cnn.com/cnn-underscored/money/chase-freedom-unlimited-vs-flex?cid=external-feeds_iluminar_meta",
+      "https://www.nerdwallet.com/credit-cards/learn/benefits-of-the-chase-freedom-and-chase-freedom-unlimited"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns a flat 1.5% on purchases. A temporary 3% rate on dining applies only during the first six months on up to $6,000 in dining purchases (not encoded as a permanent multiplier). Aimed at people with limited or no credit history. Charges foreign transaction fees.",
+    "foreign_transaction_fee": true,
+    "issuer": "Chase",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1.5,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Chase Freedom Rise",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 25,
+        "cadence": "annual",
+        "details": "$25 credit after enrolling in autopay within 3 months of account opening and remaining enrolled for 90 days (one-time).",
+        "name": "Autopay enrollment credit"
+      }
+    ],
+    "sources": [
+      "https://thepointsguy.com/credit-cards/reviews/chase-freedom-rise-credit-card-review/",
+      "https://wallethub.com/d/chase-freedom-rise-credit-card-3452c"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 3% at U.S. supermarkets, on U.S. gas, and on U.S. online retail purchases; each 3% category is capped at $6,000 per calendar year, then 1%. Superstores and warehouse clubs do not count as supermarkets. 1% on all other purchases. Charges a 2.7% foreign transaction fee. Welcome offer varies by applicant.",
+    "foreign_transaction_fee": true,
+    "issuer": "American Express",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 3,
+      "groceries": 3,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Blue Cash Everyday Card from American Express",
+    "network": "American Express",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Variable welcome offer of up to $200 after $2,000 in purchases in the first 6 months.",
+        "name": "Welcome offer"
+      },
+      {
+        "amount": 7,
+        "cadence": "monthly",
+        "details": "Up to $7 per month back on eligible Disney+, Hulu, and ESPN+ subscription purchases (enrollment required).",
+        "name": "Entertainment streaming credit"
+      },
+      {
+        "amount": 15,
+        "cadence": "monthly",
+        "details": "Up to $15 per month back on eligible Home Chef purchases.",
+        "name": "Home Chef credit"
+      }
+    ],
+    "sources": [
+      "https://www.fool.com/the-ascent/credit-cards/american-express-blue-review/",
+      "https://www.creditkarma.com/credit-cards/insights/blue-cash-everyday-card-from-american-express"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 2% total on all purchases: 1% when you buy and another 1% as you pay; a timely minimum payment is required to earn the second 1%. Earns 5% total on hotels, car rentals, and attractions booked through Citi Travel (portal rate). No rewards on balance transfers. Charges a 3% foreign transaction fee.",
+    "foreign_transaction_fee": true,
+    "issuer": "Citi",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 2,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 5,
+      "travel": 0
+    },
+    "name": "Citi Double Cash Card",
+    "network": "Mastercard",
+    "perks": [
+      {
+        "amount": 200,
+        "cadence": "annual",
+        "details": "Earn $200 cash back (20,000 ThankYou points) after $1,500 in purchases in the first 6 months of account opening.",
+        "name": "Welcome bonus"
+      }
+    ],
+    "sources": [
+      "https://www.citi.com/credit-cards/citi-double-cash-credit-card",
+      "https://www.fool.com/money/credit-cards/landing/review-citi-double-cash/",
+      "https://wallethub.com/credit-cards/citibank-13001291i"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 1% on all purchases plus 5% in rotating quarterly bonus categories (activation required; capped at $1,500 in combined category purchases per quarter, then 1%). Rotating-category rates are temporary and are not encoded as permanent multipliers. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Discover",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Discover it Cash Back",
+    "network": "Discover",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Unlimited Cashback Match: Discover matches all the cash back earned at the end of the first year.",
+        "name": "Cashback Match"
+      }
+    ],
+    "sources": [
+      "https://www.fool.com/money/credit-cards/landing/discover-it-cash-back-review-v2-csr/",
+      "https://thepointsguy.com/credit-cards/discover/"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 1.5x miles on every purchase, with no caps. Miles redeem as cash or as statement credit against travel purchases (one mile equals one cent). No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Discover",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1.5,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Discover it Miles",
+    "network": "Discover",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Unlimited mile-for-mile match: Discover matches all miles earned at the end of the first year.",
+        "name": "Mile-for-mile match"
+      }
+    ],
+    "sources": [
+      "https://thepointsguy.com/credit-cards/discover/",
+      "https://www.fool.com/money/credit-cards/discover/"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 2% at gas stations and restaurants on up to $1,000 in combined purchases each quarter (then 1%), and 1% on all other purchases. 0% intro APR for 6 months on purchases and 18 months on balance transfers (then 17.49%-26.49% variable). No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Discover",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 2,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 2,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Discover it Chrome",
+    "network": "Discover",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Unlimited Cashback Match: Discover matches all the cash back earned at the end of the first year.",
+        "name": "Cashback Match"
+      }
+    ],
+    "sources": [
+      "https://www.fool.com/money/credit-cards/landing/discover-it-chrome-review/",
+      "https://www.fool.com/money/credit-cards/discover/"
+    ]
+  }
+,
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 2% on all purchases. Charges a 3% foreign transaction fee. The current welcome offer is $100 (older $200 offers have expired).",
+    "foreign_transaction_fee": true,
+    "issuer": "Wells Fargo",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 2,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Wells Fargo Active Cash Card",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 100,
+        "cadence": "annual",
+        "details": "$100 cash rewards bonus after $500 in purchases in the first 3 months.",
+        "name": "Welcome bonus"
+      },
+      {
+        "amount": 600,
+        "cadence": "annual",
+        "details": "Up to $600 per claim ($25 deductible) for cell phone damage or theft when you pay your monthly cell phone bill with the card.",
+        "name": "Cell phone protection"
+      }
+    ],
+    "sources": [
+      "https://www.fool.com/money/credit-cards/wells-fargo/wells-fargo-active-cash-card-review/",
+      "https://www.nerdwallet.com/credit-cards/reviews/wells-fargo-active-cash?trk_channel=web&trk_element=button&trk_location=MiniProductCard&trk=cc_lm"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 3x on restaurants, travel, gas, transit, streaming services, and phone plans; 1x on all other purchases. Travel includes airfare, hotels, car rentals, and cruises. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Wells Fargo",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 3,
+      "everyday": 1,
+      "flights": 3,
+      "gas": 3,
+      "groceries": 0,
+      "hotels": 3,
+      "travel": 3
+    },
+    "name": "Wells Fargo Autograph Card",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "20,000 bonus points (redeemable for $200 cash) after $1,000 in purchases in the first 3 months.",
+        "name": "Welcome bonus"
+      },
+      {
+        "amount": 600,
+        "cadence": "annual",
+        "details": "Up to $600 per claim ($25 deductible) for cell phone damage or theft when you pay your monthly cell phone bill with the card.",
+        "name": "Cell phone protection"
+      }
+    ],
+    "sources": [
+      "https://www.fool.com/the-ascent/credit-cards/wells-fargo-autograph-card-review/",
+      "https://cardcritics.com/credit-cards/card-issuer/wells-fargo/wells-fargo-autograph-review/"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 1.5% on all purchases. Charges a 3% foreign transaction fee. The $250 welcome offer is limited-time (normally $200). Bank of America Rewards members can earn more.",
+    "foreign_transaction_fee": true,
+    "issuer": "Bank of America",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1.5,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Bank of America Unlimited Cash Rewards",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 250,
+        "cadence": "annual",
+        "details": "Limited-time offer: $250 online bonus after $1,000 in purchases in the first 90 days of account opening.",
+        "name": "Welcome bonus"
+      }
+    ],
+    "sources": [
+      "https://cardcritics.com/credit-cards/card-issuer/bank-of-america/bank-of-america-unlimited-cash-rewards-review/",
+      "http://Thepointsguy.com/credit-cards/reviews/bank-of-america-unlimited-cash-rewards-review/",
+      "https://wallethub.com/d/bank-of-america-unlimited-cash-rewards-credit-card-1687c"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 1.5 points per $1 on all purchases and 3 points per $1 on travel booked through the Bank of America Travel portal. Points are worth 1 cent each toward travel or dining statement credits (minimum 2,500 points); cash-back and gift-card redemptions are worth less. Bank of America Rewards members earn 25%-75% more points. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Bank of America",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1.5,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Bank of America Travel Rewards",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "25,000 online bonus points ($250 toward travel) after $1,000 in purchases in the first 90 days.",
+        "name": "Welcome bonus"
+      },
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Earn 3 points per $1 on travel booked through the Bank of America Travel portal (portal rate; not encoded in the travel multiplier).",
+        "name": "BofA Travel portal bonus rate"
+      }
+    ],
+    "sources": [
+      "https://www.fool.com/money/credit-cards/landing/bank-america-travel-rewards-review/",
+      "https://www.creditkarma.com/credit-cards/insights/bank-of-america-travel-rewards-credit-card",
+      "https://WWW.Bankrate.com/credit-cards/rewards/bank-of-america-travel-rewards-guide/"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 1% on non-bonus spend. Choose 5% on two categories each quarter (you must select them every quarter; capped at $2,000 in combined category purchases per quarter, then 1%) and 2% on one everyday category. Merchant exclusions apply (for example, department stores exclude superstores and discount stores). Selected-category rates are temporary and are not encoded as permanent multipliers. Charges foreign transaction fees.",
+    "foreign_transaction_fee": true,
+    "issuer": "U.S. Bank",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "U.S. Bank Cash+ Visa Signature",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 200,
+        "cadence": "annual",
+        "details": "$200 in rewards after $1,000 in eligible purchases within the first 90 days of account opening.",
+        "name": "Welcome bonus"
+      },
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Earn 5% on prepaid air, hotel, and car reservations made through the U.S. Bank Rewards Travel Center (portal rate; not encoded in the travel multiplier).",
+        "name": "Rewards Travel Center bonus rate"
+      }
+    ],
+    "sources": [
+      "http://ThePointsGuy.com/credit-cards/reviews/us-bank-cash-plus-review/",
+      "https://financebuzz.com/us-bank-cash-visa-signature-card-review"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 4% on gas, 3% on dining, and 2% on groceries; bonus categories share a combined $8,000 annual spending cap, then 1%. 1% on all other purchases. Charges a 3% foreign transaction fee. Non-PNC customers may need to apply in a branch.",
+    "foreign_transaction_fee": true,
+    "issuer": "PNC",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 3,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 4,
+      "groceries": 2,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "PNC Cash Rewards Visa",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 200,
+        "cadence": "annual",
+        "details": "$200 bonus after $1,000 in purchases in the first 3 billing cycles.",
+        "name": "Welcome bonus"
+      }
+    ],
+    "sources": [
+      "https://wallethub.com/d/pnc-cash-rewards-visa-credit-card-3100c",
+      "https://Www.Pnc.com/content/dam/pnc-com/pdf/personal/CreditCards/cash-rewards-rates.pdf",
+      "https://www.nerdwallet.com/credit-cards/learn/what-is-pnc-bank-and-are-its-credit-cards-right-for-you?trk_channel=web&trk_copy=What%20Is%20PNC%20Bank%2C%20and%20Are%20Its%20Credit%20Cards%20Right%20for%20You%3F&trk_element=hyperlink&trk_elementPosition=12&trk_location=PostList&trk_subLocation=tiles"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 1.5% on all purchases (2% for Honors Advantage members, which requires qualifying military status or an eligible PenFed checking relationship). PenFed Credit Union membership is required to apply. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "PenFed Credit Union",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1.5,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "PenFed Power Cash Rewards Visa Signature",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 100,
+        "cadence": "annual",
+        "details": "$100 statement credit after $1,500 in purchases in the first 90 days.",
+        "name": "Welcome bonus"
+      }
+    ],
+    "sources": [
+      "https://www.penfed.org/credit-cards/power-cash-rewards",
+      "https://wallethub.com/d/penfed-credit-union-power-cash-rewards-credit-card-2746c"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 5x on fuel and EV charging and 3x on supermarkets, restaurants, and TV/radio/cable/streaming services; 1x on all other purchases. Points expire after five years and have variable redemption value (can be worth less than 1 cent). PenFed Credit Union membership is required. Applicants who do not qualify for the Signature version may receive a different Platinum Rewards Visa with different benefits. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "PenFed Credit Union",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 3,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 5,
+      "groceries": 3,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "PenFed Platinum Rewards Visa Signature",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "15,000 bonus points (worth up to $150 toward travel) after $1,500 in purchases in the first 90 days.",
+        "name": "Welcome bonus"
+      }
+    ],
+    "sources": [
+      "https://www.penfed.org/content/dam/penfed/general/pdf/creditcardpdfs/summary-terms/current/summary-of-terms-vps-00.pdf",
+      "https://wallethub.com/d/penfed-platinum-rewards-670c"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 2% on all purchases. Charges a 3% foreign transaction fee. Available nationwide.",
+    "foreign_transaction_fee": true,
+    "issuer": "First National Bank of Omaha",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 2,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "FNBO Evergreen",
+    "network": "Visa",
+    "perks": [],
+    "sources": [
+      "https://www.fnbo.com/personal-banking/credit-cards/evergreen/",
+      "https://wallethub.com/credit-cards/first-national-bank-of-omaha-13003011i",
+      "https://wallethub.com/answers/cc/fnbo-foreign-transaction-fee-1000339-2140824967/"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 3x on restaurants and food delivery, supermarkets, and gas/transit; 1x on all other purchases. Merchant coding restrictions apply: embedded restaurants and gas purchases at superstores, supermarkets, and warehouse clubs may earn only 1x. Requires Navy Federal Credit Union membership to apply. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Navy Federal Credit Union",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 3,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 3,
+      "groceries": 3,
+      "hotels": 0,
+      "travel": 3
+    },
+    "name": "Navy Federal More Rewards American Express",
+    "network": "American Express",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "20,000 bonus points after $2,000 in purchases within the first 90 days of account opening; offer valid for applications July 1, 2026 through Jan. 3, 2027.",
+        "name": "Welcome bonus"
+      }
+    ],
+    "sources": [
+      "https://www.navyfederal.org/loans-cards/credit-cards/offers/more-rewards.html",
+      "https://www.navyfederal.org/loans-cards/credit-cards/more-rewards.html",
+      "https://wallethub.com/d/navy-federal-credit-union-more-rewards-american-express-credit-card-3098c"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 1% on purchases made with the physical card (or without Apple Pay); 2% with Apple Pay; 3% at Apple and at select Apple Pay merchants (including Nike, Uber, Uber Eats, Walgreens, and ExxonMobil). Cash back is paid as Daily Cash with no minimum. No standard welcome offer. Issuer is Goldman Sachs, transitioning to JPMorgan Chase over roughly 24 months; the Mastercard network and current rewards/fee structure continue during the transition. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Goldman Sachs",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Apple Card",
+    "network": "Mastercard",
+    "perks": [],
+    "sources": [
+      "https://lavoroecredito.com/guides/apple-card",
+      "https://www.macrumors.com/guide/apple-card/"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 1% on all purchases, plus 3% on your highest-spend eligible category and 2% on the second-highest each statement cycle. The 3%/2% rates apply to up to $10,000 in combined category spending per year after the first year (uncapped in year one). Category rates are not encoded as permanent multipliers. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Synchrony",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Venmo Credit Card",
+    "network": "Visa",
+    "perks": [],
+    "sources": [
+      "https://venmo.com/about/creditcard/features/visasignature",
+      "https://thepointsguy.com/credit-cards/reasons-to-add-venmo-credit-card/"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns 3% on PayPal checkout purchases and 1.5% on everything else. Charges a 3% foreign transaction fee. No standing welcome offer.",
+    "foreign_transaction_fee": true,
+    "issuer": "Synchrony",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 1.5,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "PayPal Cashback Mastercard",
+    "network": "Mastercard",
+    "perks": [],
+    "sources": [
+      "https://wallethub.com/d/paypal-credit-card-3091c",
+      "https://thepointsguy.com/credit-cards/reviews/review-paypal-cashback-mastercard/"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 2 points per $1, worth 2% only when deposited into an eligible Fidelity account; other redemption options (statement credit, travel, merchandise, gift cards) may be worth less. No foreign transaction fees. No welcome offer.",
+    "foreign_transaction_fee": false,
+    "issuer": "Elan Financial Services",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 2,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Fidelity Rewards Visa Signature",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 0,
+        "cadence": "annual",
+        "details": "Up to 10,000 points toward a Global Entry or TSA PreCheck application fee every four years.",
+        "name": "Global Entry/TSA PreCheck credit"
+      }
+    ],
+    "sources": [
+      "https://www.fidelityrewards.com/credit/benefits.do",
+      "https://www.nerdwallet.com/credit-cards/reviews/fidelity-rewards",
+      "https://www.cardratings.com/credit-card/fidelity-rewards-visa-signature-card-review.html"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 2% on all purchases. Public applications are not available; you must receive a pre-approved Bread offer to apply. Issued by Comenity/Bread Financial. No foreign transaction fees.",
+    "foreign_transaction_fee": false,
+    "issuer": "Bread Financial",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 2,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "Bread Cashback American Express Card",
+    "network": "American Express",
+    "perks": [],
+    "sources": [
+      "https://www.breadfinancial.com/en/bread-financial-cashback-card.html",
+      "https://www.nerdwallet.com/credit-cards/best/2-percent-cash-back"
+    ]
+  },
+  {
+    "annual_fee": 0,
+    "details": "Earns unlimited 2% on all purchases. Charges a 3% foreign transaction fee. Only available to applicants in CT, DC, DE, FL, MA, MD, ME, NC, NH, NJ, NY, PA, RI, SC, VA, and VT. May be issued as a Visa Signature or Visa Platinum card.",
+    "foreign_transaction_fee": true,
+    "issuer": "TD Bank",
+    "multipliers": {
+      "alaska_airlines": 0,
+      "dining": 0,
+      "everyday": 2,
+      "flights": 0,
+      "gas": 0,
+      "groceries": 0,
+      "hotels": 0,
+      "travel": 0
+    },
+    "name": "TD Double Up Credit Card",
+    "network": "Visa",
+    "perks": [
+      {
+        "amount": 200,
+        "cadence": "annual",
+        "details": "$200 statement credit after $1,500 in purchases in the first 90 days of account opening.",
+        "name": "Welcome bonus"
+      }
+    ],
+    "sources": [
+      "https://www.nerdwallet.com/credit-cards/reviews/td-double-up",
+      "http://ThePointsGuy.com/credit-cards/td-double-up-card/",
+      "https://awardwallet.com/credit-cards/cash-back/td-double-up-credit-card/"
+    ]
+  }
+]}
