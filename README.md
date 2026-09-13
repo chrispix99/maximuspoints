@@ -27,7 +27,7 @@ cd maximuspoints
 cp .env.example .env   # fill in values (see below)
 npm install
 npm run db:migrate     # apply Drizzle migrations
-npm run db:seed        # load card data from ../maximuspoints-research/*.json
+npm run db:seed        # load card data from ./data/*.json
 npm run dev            # http://localhost:3000
 ```
 
@@ -59,7 +59,7 @@ npm run dev            # http://localhost:3000
 
 `npm run db:seed` reads `../maximuspoints-research/cards_premium.json`,
 `../maximuspoints-research/cards_midtier.json`, and
-`../maximuspoints-research/cards_gapfill.json` (each a JSON array of card
+`./data/cards_gapfill.json` (each a JSON array of card
 objects or `{"cards": [...]}`), merges them, dedupes by card name, and
 upserts into `cards` + `perks`. Missing files produce a clear error instead
 of a silent no-op. Snake_case keys (`annual_fee`, `foreign_transaction_fee`)

@@ -56,7 +56,7 @@ import * as schema from "../drizzle/schema";
 import type { CardMultipliers, PerkCadence } from "../drizzle/schema";
 
 const PROJECT_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const RESEARCH_DIR = resolve(PROJECT_DIR, "..", "maximuspoints-research");
+const RESEARCH_DIR = resolve(PROJECT_DIR, "data");
 const INPUT_FILES = [
   "cards_premium.json",
   "cards_midtier.json",
