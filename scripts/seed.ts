@@ -20,6 +20,7 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { getDb } from "../lib/db";
 import { normalizeCardList, seedCards } from "../lib/card-seed";
+import { normalizePortalList, seedPortals } from "../lib/portal-seed";
 
 const PROJECT_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const RESEARCH_DIR = resolve(PROJECT_DIR, "data");
@@ -88,6 +89,21 @@ async function main() {
     for (const c of cards.slice(0, 5)) {
       console.log(`  $${c.annualFee / 100} — ${c.name} (${c.perks.length} perks)`);
     }
+    const portalFile = resolve(RESEARCH_DIR, "portals.json");
+    if (existsSync(portalFile)) {
+      try {
+        const portals = normalizePortalList(
+          JSON.parse(readFileSync(portalFile, "utf8")),
+        );
+        const mCount = portals.reduce((n, p) => n + p.merchants.length, 0);
+        console.log(
+          `DRY RUN OK: ${portals.length} portals, ${mCount} merchant rates.`,
+        );
+      } catch (err) {
+        console.error(`ERROR: portals.json invalid: ${(err as Error).message}`);
+        process.exit(1);
+      }
+    }
     console.log("Dry run complete — no database changes made.");
     return;
   }
@@ -97,6 +113,33 @@ async function main() {
     console.log(`  ✓ ${c.name} (${c.perks.length} perks)`);
   }
   console.log(`Done: ${result.cards} cards, ${result.perks} perks.`);
+
+  // Portal bonuses (data/portals.json) — stacked on top of card earnings.
+  const portalFile = resolve(RESEARCH_DIR, "portals.json");
+  if (existsSync(portalFile)) {
+    let portalParsed: unknown;
+    try {
+      portalParsed = JSON.parse(readFileSync(portalFile, "utf8"));
+    } catch (err) {
+      console.error(
+        `ERROR: could not parse ${portalFile}: ${(err as Error).message}`,
+      );
+      process.exit(1);
+    }
+    let portals;
+    try {
+      portals = normalizePortalList(portalParsed);
+    } catch (err) {
+      console.error(`ERROR: ${(err as Error).message}`);
+      process.exit(1);
+    }
+    const presult = await seedPortals(getDb(), portals);
+    console.log(
+      `Done: ${presult.portals} portals, ${presult.merchants} merchant rates (${presult.inserted} inserted, ${presult.updated} updated).`,
+    );
+  } else if (!dryRun) {
+    console.warn("WARN: data/portals.json not found, skipping portal seed.");
+  }
 }
 
 main().catch((err) => {

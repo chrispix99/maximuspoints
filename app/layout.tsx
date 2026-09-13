@@ -14,6 +14,7 @@ const NAV = [
   { href: "/cards", label: "Cards" },
   { href: "/optimizer", label: "Optimizer" },
   { href: "/advisor", label: "Advisor" },
+  { href: "/portals", label: "Portals" },
   { href: "/calculator", label: "Calculator" },
   { href: "/tracker", label: "Tracker" },
   { href: "/accounts", label: "Accounts" },

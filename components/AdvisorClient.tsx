@@ -21,7 +21,48 @@ const QUICK_PICKS = [
   "Everyday spending",
 ];
 
-export default function AdvisorClient({ cards }: { cards: OptimizerCard[] }) {
+export interface PortalBonus {
+  merchant: string;
+  portal: string;
+  program: string | null;
+  rate: number;
+  url: string | null;
+  checkedAt: string | null;
+}
+
+/** Find a merchant mentioned in the query (word-boundary, longest match wins). */
+export function detectMerchant(
+  query: string,
+  portals: PortalBonus[],
+): PortalBonus[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const byMerchant = new Map<string, PortalBonus[]>();
+  for (const p of portals) {
+    const list = byMerchant.get(p.merchant) ?? [];
+    list.push(p);
+    byMerchant.set(p.merchant, list);
+  }
+  let best: { name: string; bonuses: PortalBonus[] } | null = null;
+  for (const [name, bonuses] of byMerchant) {
+    const pattern = new RegExp(
+      `\\b${name.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`,
+    );
+    if (pattern.test(q) && (!best || name.length > best.name.length)) {
+      best = { name, bonuses };
+    }
+  }
+  if (!best) return [];
+  return [...best.bonuses].sort((a, b) => b.rate - a.rate);
+}
+
+export default function AdvisorClient({
+  cards,
+  portals,
+}: {
+  cards: OptimizerCard[];
+  portals: PortalBonus[];
+}) {
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<"net" | "ppd" | "points" | "fee">("net");
 
@@ -41,8 +82,8 @@ export default function AdvisorClient({ cards }: { cards: OptimizerCard[] }) {
           return b.netAnnualValueCents - a.netAnnualValueCents;
       }
     });
-    return { detection, ranked: sorted };
-  }, [cards, query, sort]);
+    return { detection, ranked: sorted, merchantBonuses: detectMerchant(query, portals) };
+  }, [cards, query, sort, portals]);
 
   const hasQuery = query.trim().length > 0;
 
@@ -83,6 +124,59 @@ export default function AdvisorClient({ cards }: { cards: OptimizerCard[] }) {
 
       {hasQuery && (
         <>
+          {result.merchantBonuses.length > 0 && (
+            <Panel className="mb-4 border-brand-200 bg-brand-50">
+              <h3 className="text-sm font-bold text-slate-900">
+                🛒 Stack a portal bonus at {result.merchantBonuses[0].merchant}
+              </h3>
+              <p className="mt-1 text-xs text-slate-600">
+                Click through one of these portals before checkout to earn extra
+                points <em>on top of</em> your card — paid by the portal, not
+                the card.
+              </p>
+              <ul className="mt-2 space-y-1.5">
+                {result.merchantBonuses.slice(0, 4).map((b) => (
+                  <li
+                    key={b.portal}
+                    className="flex items-center justify-between gap-3 text-sm"
+                  >
+                    <span className="min-w-0">
+                      <span className="font-medium text-slate-800">
+                        {b.portal}
+                      </span>
+                      {b.program && (
+                        <span className="text-xs text-slate-500">
+                          {" "}
+                          · {b.program}
+                        </span>
+                      )}
+                    </span>
+                    <span className="flex shrink-0 items-center gap-2">
+                      <span className="rounded-full bg-brand-600 px-2.5 py-0.5 text-xs font-bold text-white">
+                        +{b.rate} /$
+                      </span>
+                      {b.url && (
+                        <a
+                          href={b.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-xs font-semibold text-brand-700 hover:underline"
+                        >
+                          Shop →
+                        </a>
+                      )}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              {result.merchantBonuses[0].checkedAt && (
+                <p className="mt-2 text-[11px] text-slate-400">
+                  Portal rates change often — last checked{" "}
+                  {result.merchantBonuses[0].checkedAt}.
+                </p>
+              )}
+            </Panel>
+          )}
           <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
             <span className="flex items-center gap-2">
               <span className="text-slate-500">Detected category:</span>

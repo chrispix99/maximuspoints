@@ -5,6 +5,7 @@ import {
   pgEnum,
   pgTable,
   primaryKey,
+  real,
   text,
   timestamp,
   uniqueIndex,
@@ -189,6 +190,30 @@ export const userCards = pgTable(
   },
   (t) => [uniqueIndex("user_cards_user_card_idx").on(t.userId, t.cardId)],
 );
+
+// ---------------------------------------------------------------------------
+// Shopping portal bonuses: merchant × portal earn rates (miles/pts per $1),
+// stacked on top of credit card earnings. Refreshed by the monthly job.
+// ---------------------------------------------------------------------------
+
+export const portalMerchants = pgTable(
+  "portal_merchants",
+  {
+    id: text("id")
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    portal: text("portal").notNull(), // e.g. "Alaska Mileage Plan Shopping"
+    program: text("program"), // currency earned, e.g. "Atmos Rewards points"
+    merchant: text("merchant").notNull(), // clean display name, e.g. "Nike"
+    milesPerDollar: real("miles_per_dollar").notNull(),
+    portalUrl: text("portal_url"),
+    sourceUrl: text("source_url"),
+    checkedAt: timestamp("checked_at", { mode: "date" }),
+  },
+  (t) => [uniqueIndex("portal_merchant_idx").on(t.portal, t.merchant)],
+);
+
+export type PortalMerchant = typeof portalMerchants.$inferSelect;
 
 // ---------------------------------------------------------------------------
 // Relations (enable db.query.* relational queries)
