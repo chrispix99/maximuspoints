@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { Panel, RankBadge, SortSelect } from "./ui";
+import { slugify } from "@/lib/slugify";
 import { detectCategory } from "@/lib/category-detect";
 import {
   rankCards,
@@ -202,9 +204,12 @@ export default function AdvisorClient({
                   <div className="min-w-0 flex-1">
                     <span>
                       Pay with{" "}
-                      <span className="font-semibold text-slate-900">
+                      <Link
+                        href={`/cards/${slugify(result.stack.card.name)}`}
+                        className="font-semibold text-brand-700 hover:underline"
+                      >
                         {result.stack.card.name}
-                      </span>{" "}
+                      </Link>{" "}
                       →{" "}
                       <span className="font-semibold text-slate-900">
                         +{result.stack.card.pointsPerDollar} pts/$
@@ -337,7 +342,12 @@ export default function AdvisorClient({
                 <div className="min-w-0 flex-1">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <h2 className="truncate text-base font-bold text-slate-900">
-                      {card.name}
+                      <Link
+                        href={`/cards/${slugify(card.name)}`}
+                        className="hover:text-brand-700 hover:underline"
+                      >
+                        {card.name}
+                      </Link>
                     </h2>
                     <span className="text-sm font-bold text-brand-700">
                       {card.pointsPerDollar} pts/$

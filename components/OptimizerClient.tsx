@@ -1,7 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { Panel, RankBadge, SortSelect } from "./ui";
+import { slugify } from "@/lib/slugify";
 import {
   rankCards,
   formatMoney,
@@ -129,7 +131,12 @@ export default function OptimizerClient({ cards }: { cards: OptimizerCard[] }) {
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h2 className="truncate text-base font-bold text-slate-900">
-                  {card.name}
+                  <Link
+                    href={`/cards/${slugify(card.name)}`}
+                    className="hover:text-brand-700 hover:underline"
+                  >
+                    {card.name}
+                  </Link>
                 </h2>
                 <span
                   className={`text-sm font-bold ${card.netAnnualValueCents >= 0 ? "text-green-700" : "text-red-600"}`}

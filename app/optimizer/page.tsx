@@ -2,6 +2,8 @@ import { desc } from "drizzle-orm";
 import { getDb } from "@/lib/db";
 import { cards } from "@/drizzle/schema";
 import { PageHeader, SeedEmptyState } from "@/components/ui";
+import EmailCapture from "@/components/EmailCapture";
+import { AdvertiserDisclosure } from "@/components/monetization";
 import OptimizerClient, {
   type OptimizerCard,
 } from "@/components/OptimizerClient";
@@ -35,7 +37,15 @@ export default async function OptimizerPage() {
       {list.length === 0 ? (
         <SeedEmptyState feature="optimizer" />
       ) : (
-        <OptimizerClient cards={list} />
+        <>
+          <OptimizerClient cards={list} />
+          <div className="mt-6">
+            <EmailCapture source="optimizer" />
+          </div>
+          <div className="mt-4">
+            <AdvertiserDisclosure compact />
+          </div>
+        </>
       )}
     </div>
   );

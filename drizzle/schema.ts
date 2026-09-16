@@ -192,6 +192,25 @@ export const userCards = pgTable(
 );
 
 // ---------------------------------------------------------------------------
+// Newsletter: email capture for perk-expiry alerts ("AI-led" retention loop).
+// Written by /api/newsletter; the Resend welcome email only sends when
+// RESEND_API_KEY + EMAIL_FROM are configured.
+// ---------------------------------------------------------------------------
+
+export const newsletterSubscribers = pgTable(
+  "newsletter_subscribers",
+  {
+    id: text("id")
+      .primaryKey()
+      .$defaultFn(() => crypto.randomUUID()),
+    email: text("email").notNull().unique(),
+    source: text("source"), // e.g. "optimizer", "advisor", "alaska"
+    createdAt: timestamp("createdAt", { mode: "date" }).notNull().defaultNow(),
+  },
+  (t) => [uniqueIndex("newsletter_subscribers_email_idx").on(t.email)],
+);
+
+// ---------------------------------------------------------------------------
 // Shopping portal bonuses: merchant × portal earn rates (miles/pts per $1),
 // stacked on top of credit card earnings. Refreshed by the monthly job.
 // ---------------------------------------------------------------------------

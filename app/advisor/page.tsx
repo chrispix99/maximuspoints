@@ -2,6 +2,8 @@ import { desc } from "drizzle-orm";
 import { getDb } from "@/lib/db";
 import { cards, portalMerchants } from "@/drizzle/schema";
 import { PageHeader, SeedEmptyState } from "@/components/ui";
+import EmailCapture from "@/components/EmailCapture";
+import { AdvertiserDisclosure } from "@/components/monetization";
 import AdvisorClient from "@/components/AdvisorClient";
 import type { OptimizerCard } from "@/components/OptimizerClient";
 import type { PortalBonus } from "@/components/AdvisorClient";
@@ -47,7 +49,15 @@ export default async function AdvisorPage() {
       {list.length === 0 ? (
         <SeedEmptyState feature="advisor" />
       ) : (
-        <AdvisorClient cards={list} portals={portals} />
+        <>
+          <AdvisorClient cards={list} portals={portals} />
+          <div className="mt-6">
+            <EmailCapture source="advisor" />
+          </div>
+          <div className="mt-4">
+            <AdvertiserDisclosure compact />
+          </div>
+        </>
       )}
     </div>
   );

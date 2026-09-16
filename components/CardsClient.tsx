@@ -1,7 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { Panel, SortSelect } from "./ui";
+import { ApplyCta, AdvertiserDisclosure } from "./monetization";
+import { slugify } from "@/lib/slugify";
 import { formatMoney, type Category, CATEGORIES } from "@/lib/card-math";
 import type { CardMultipliers, PerkCadence } from "@/drizzle/schema";
 import { CADENCE_LABELS } from "@/lib/periods";
@@ -123,7 +126,12 @@ export default function CardsClient({ cards }: { cards: CardWithPerks[] }) {
             <div className="flex items-start justify-between gap-2">
               <div>
                 <h2 className="text-lg font-bold text-slate-900">
-                  {card.name}
+                  <Link
+                    href={`/cards/${slugify(card.name)}`}
+                    className="hover:text-brand-700 hover:underline"
+                  >
+                    {card.name}
+                  </Link>
                 </h2>
                 <p className="text-sm text-slate-500">
                   {card.issuer}
@@ -209,6 +217,8 @@ export default function CardsClient({ cards }: { cards: CardWithPerks[] }) {
                 </ul>
               </div>
             )}
+
+            <ApplyCta cardName={card.name} />
           </Panel>
         ))}
       </div>
@@ -217,6 +227,12 @@ export default function CardsClient({ cards }: { cards: CardWithPerks[] }) {
         <Panel className="text-center text-sm text-slate-500">
           No cards from this issuer.
         </Panel>
+      )}
+
+      {filtered.length > 0 && (
+        <div className="mt-6">
+          <AdvertiserDisclosure />
+        </div>
       )}
     </div>
   );

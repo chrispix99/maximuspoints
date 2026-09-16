@@ -14,6 +14,7 @@ const NAV = [
   { href: "/cards", label: "Cards" },
   { href: "/optimizer", label: "Optimizer" },
   { href: "/advisor", label: "Advisor" },
+  { href: "/alaska", label: "Alaska ✈️" },
   { href: "/portals", label: "Portals" },
   { href: "/calculator", label: "Calculator" },
   { href: "/tracker", label: "Tracker" },
@@ -82,6 +83,11 @@ export default async function RootLayout({
         <footer className="border-t border-slate-200 py-6">
           <p className="mx-auto max-w-5xl px-4 text-center text-xs text-slate-400">
             maximusPoints · earn math valued at 1¢/point · not financial advice
+          </p>
+          <p className="mx-auto mt-1 max-w-5xl px-4 text-center text-[11px] text-slate-400">
+            We may earn a commission when you apply for a card through links on
+            this site. Rankings are computed from public earn rates and fees —
+            never from who pays us.
           </p>
         </footer>
       </body>
