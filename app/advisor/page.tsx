@@ -7,6 +7,11 @@ import { AdvertiserDisclosure } from "@/components/monetization";
 import AdvisorClient from "@/components/AdvisorClient";
 import type { OptimizerCard } from "@/components/OptimizerClient";
 import type { PortalBonus } from "@/components/AdvisorClient";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/advisor" },
+};
 
 export const dynamic = "force-dynamic";
 

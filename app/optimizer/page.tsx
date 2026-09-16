@@ -7,6 +7,11 @@ import { AdvertiserDisclosure } from "@/components/monetization";
 import OptimizerClient, {
   type OptimizerCard,
 } from "@/components/OptimizerClient";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/optimizer" },
+};
 
 export const dynamic = "force-dynamic";
 

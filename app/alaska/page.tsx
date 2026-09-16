@@ -21,6 +21,7 @@ export const metadata: Metadata = {  title: "Best credit cards for Alaska Airlin
       "Real earn math for Atmos Rewards: which card earns the most on Alaska Airlines purchases, and when the $99 companion fare pays for the annual fee.",
     type: "website",
   },
+  alternates: { canonical: "/alaska" },
 };
 
 function cardLink(name: string): string {

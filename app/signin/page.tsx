@@ -1,5 +1,10 @@
 import { signIn } from "@/lib/auth";
 import { Panel, PageHeader } from "@/components/ui";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/signin" },
+};
 
 export default function SignInPage() {
   return (

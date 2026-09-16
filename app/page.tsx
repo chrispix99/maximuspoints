@@ -2,6 +2,11 @@ import Link from "next/link";
 import { auth } from "@/lib/auth";
 import PlaidLinkButton from "@/components/PlaidLinkButton";
 import { Panel } from "@/components/ui";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export const dynamic = "force-dynamic";
 

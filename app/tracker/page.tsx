@@ -10,6 +10,11 @@ import TrackerClient, {
 } from "@/components/TrackerClient";
 import { currentPeriodKey } from "@/lib/periods";
 import type { PerkCadence } from "@/drizzle/schema";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/tracker" },
+};
 
 export const dynamic = "force-dynamic";
 

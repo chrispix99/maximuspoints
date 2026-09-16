@@ -3,6 +3,11 @@ import { getDb } from "@/lib/db";
 import { cards } from "@/drizzle/schema";
 import { PageHeader, SeedEmptyState } from "@/components/ui";
 import CardsClient, { type CardWithPerks } from "@/components/CardsClient";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/cards" },
+};
 
 export const dynamic = "force-dynamic";
 

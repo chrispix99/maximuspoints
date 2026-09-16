@@ -1,5 +1,10 @@
 import { PageHeader } from "@/components/ui";
 import CalculatorClient from "@/components/CalculatorClient";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/calculator" },
+};
 
 export default function CalculatorPage() {
   return (

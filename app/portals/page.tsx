@@ -4,6 +4,11 @@ import { PageHeader, SeedEmptyState } from "@/components/ui";
 import PortalsClient, {
   type PortalRow,
 } from "@/components/PortalsClient";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/portals" },
+};
 
 export const dynamic = "force-dynamic";
 

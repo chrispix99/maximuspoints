@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import { auth, signOut } from "@/lib/auth";
+import { SITE_URL } from "@/lib/site";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "maximusPoints — Credit Card Rewards Optimizer",
   description:
     "Browse credit cards, optimize spend, track perk credits, and sync accounts via Plaid.",

@@ -2,6 +2,11 @@ import { redirect } from "next/navigation";
 import { auth } from "@/lib/auth";
 import { PageHeader } from "@/components/ui";
 import AccountsClient from "@/components/AccountsClient";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/accounts" },
+};
 
 export const dynamic = "force-dynamic";
 
