@@ -4,13 +4,15 @@ import { PageHeader, Panel } from "@/components/ui";
 import { ApplyCta, AdvertiserDisclosure } from "@/components/monetization";
 import EmailCapture from "@/components/EmailCapture";
 import { loadAllCards, type PublicCard } from "@/lib/card-data";
-import { nameForSlug, allCardNamesFromJson } from "@/lib/card-slug";
+import {
+  buildSlugMap,
+  allCardNamesFromJson,
+} from "@/lib/card-slug";
 import { formatMoney } from "@/lib/card-math";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = {
-  title: "Best credit cards for Alaska Airlines flyers (2026) — maximusPoints",
+export const metadata: Metadata = {  title: "Best credit cards for Alaska Airlines flyers (2026) — maximusPoints",
   description:
     "Compare the Atmos Rewards Ascent, Summit, and Business cards plus the best transferable-points cards for Alaska Airlines spend — real earn math, companion fare details, and fees.",
   openGraph: {
@@ -22,9 +24,12 @@ export const metadata: Metadata = {
 };
 
 function cardLink(name: string): string {
-  const slug = nameForSlug(name, allCardNamesFromJson());
+  const slug = SLUG_MAP.get(name);
   return slug ? `/cards/${slug}` : "/cards";
 }
+
+// Built once per server instance — data/*.json ships with the deployment.
+const SLUG_MAP = buildSlugMap(allCardNamesFromJson());
 
 function EarnMath({ card }: { card: PublicCard }) {
   const mult = card.multipliers.alaska_airlines ?? 0;
