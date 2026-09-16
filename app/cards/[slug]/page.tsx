@@ -101,13 +101,13 @@ function EarnExample({ card }: { card: PublicCard }) {
             against a {formatMoney(card.annualFee)} annual fee — net{" "}
             <span
               className={
-                pts * 100 - card.annualFee >= 0
+                pts - card.annualFee >= 0
                   ? "font-bold text-green-700"
                   : "font-bold text-red-600"
               }
             >
-              {pts * 100 - card.annualFee >= 0 ? "+" : ""}
-              {formatMoney(pts * 100 - card.annualFee)}/yr
+              {pts - card.annualFee >= 0 ? "+" : ""}
+              {formatMoney(pts - card.annualFee)}/yr
             </span>{" "}
             on this category alone
           </>
