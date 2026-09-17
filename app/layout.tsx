@@ -18,6 +18,7 @@ const NAV = [
   { href: "/advisor", label: "Advisor" },
   { href: "/alaska", label: "Alaska ✈️" },
   { href: "/portals", label: "Portals" },
+  { href: "/offers", label: "Offers" },
   { href: "/calculator", label: "Calculator" },
   { href: "/tracker", label: "Tracker" },
   { href: "/accounts", label: "Accounts" },
