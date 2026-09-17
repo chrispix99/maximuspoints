@@ -2,8 +2,7 @@ import type { Category } from "./card-math";
 
 /** Domain suffix → merchant display name (must match portal_merchants.merchant). */
 const DOMAIN_MERCHANTS: [string, string][] = [
-  ["adidas.com", "Adidas"],
-  ["apple.com", "Apple"],
+  ["adidas.com", "Adidas"],  ["apple.com", "Apple"],
   ["athleta.com", "Athleta"],
   ["athleta.gap.com", "Athleta"],
   ["backcountry.com", "Backcountry"],
@@ -43,6 +42,15 @@ const DOMAIN_MERCHANTS: [string, string][] = [
   ["underarmour.com", "Under Armour"],
   ["vrbo.com", "Vrbo"],
   ["walgreens.com", "Walgreens"],
+  ["totalwine.com", "Total Wine"],
+  ["tirerack.com", "Tire Rack"],
+  ["garmin.com", "Garmin"],
+  ["ae.com", "American Eagle"],
+  ["asus.com", "ASUS"],
+  ["acehardware.com", "Ace Hardware"],
+  ["seagate.com", "Seagate"],
+  ["corsair.com", "Corsair"],
+  ["insta360.com", "Insta360"],
 ];
 
 /** Merchant → spend category used for card ranking. Defaults to "everyday". */

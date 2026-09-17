@@ -6,9 +6,11 @@
       "url": "https://www.atmosshopping.com/",
       "sources": [
         "https://www.alaskaair.com/atmosrewards/content/partners/earn-everyday",
-        "https://thepointsguy.com/airline/how-to-earn-alaska-airlines-atmos-rewards-points/"
+        "https://thepointsguy.com/airline/how-to-earn-alaska-airlines-atmos-rewards-points/",
+        "https://www.cashbackmonitor.com/",
+        "https://evreward.com/"
       ],
-      "checked": "2026-09-13",
+      "checked": "2026-09-17",
       "notes": "REBRANDED: was 'Mileage Plan Shopping' (mileageplanshopping.com); now 'Atmos Rewards Shopping' at atmosshopping.com, earning Atmos Rewards points. shopping.alaskaair.com no longer resolves. Rates from Cashback Monitor Alaska Atmos column (last full update 2026-09-12). Elevated now: Nike 6 (base 2), Under Armour 5 (base 1), Adidas 4 (base 1), Lululemon 4 (base 2), Vrbo 4 (base 1), Athleta 3 (base 1), Sephora 3 (base 2). Apple Store promo 4x ended, back to 1. Omitted: 'up-to' tiered rates (Macy's, CVS, Sam's Club, Samsung, Best Buy, Home Depot), flat offers (Uber Eats, DoorDash), no-rate rows (Walmart, Dell, Nordstrom direct, Etsy, Expedia, IHG, Wayfair, Costco, Coach, Target, Ticketmaster, Fandango, Hyatt, HelloFresh, REI).",
       "merchants": [
         {
@@ -140,6 +142,34 @@
           "name": "Walgreens",
           "miles_per_dollar": 1,
           "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/w/"
+        },
+        {
+          "name": "Total Wine",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 mile/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/t/"
+        },
+        {
+          "name": "Tire Rack",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 mile/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/t/"
+        },
+        {
+          "name": "Ace Hardware",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 mile/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Corsair",
+          "miles_per_dollar": 3,
+          "elevated": true,
+          "note": "Elevated from 2 miles/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
         }
       ]
     },
@@ -149,9 +179,11 @@
       "url": "https://aadvantageeshopping.com/",
       "sources": [
         "https://aadvantageeshopping.com/",
-        "https://thepointsguy.com/news/american-airlines-shopping-portal/"
+        "https://thepointsguy.com/news/american-airlines-shopping-portal/",
+        "https://www.cashbackmonitor.com/",
+        "https://evreward.com/"
       ],
-      "checked": "2026-09-13",
+      "checked": "2026-09-17",
       "notes": "Portal merchant pages are JS-rendered; rates from Cashback Monitor travel-miles comparison (last full update 2026-09-12). Elevated now: Adidas 3.5 (was 1), Athleta 3 (was 1.5), Nike 3 (was 2), Overstock 1.5 (was 1), Sephora 3 (was 2), Under Armour 5 (was 1.5), Vrbo 3.5 (was 1.5). Apple dropped from 3.5 (TPG ~Sep 7) to 1. Omitted: tiered 'up-to' rates (Best Buy, Sam's Club, Home Depot, Macy's, CVS, Samsung) and fixed-bonus offers (HelloFresh).",
       "merchants": [
         {
@@ -293,6 +325,34 @@
           "name": "Walgreens",
           "miles_per_dollar": 1.5,
           "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/w/"
+        },
+        {
+          "name": "Total Wine",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 mile/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/t/"
+        },
+        {
+          "name": "Tire Rack",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 mile/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/t/"
+        },
+        {
+          "name": "Ace Hardware",
+          "miles_per_dollar": 1.5,
+          "elevated": false,
+          "note": "1.5 miles/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Corsair",
+          "miles_per_dollar": 2.5,
+          "elevated": true,
+          "note": "Elevated from 2 miles/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
         }
       ]
     },
@@ -302,10 +362,11 @@
       "url": "https://shopping.mileageplus.com/",
       "sources": [
         "https://shopping.mileageplus.com/",
-        "https://www.cashbackmonitor.com/"
+        "https://www.cashbackmonitor.com/",
+        "https://evreward.com/"
       ],
-      "checked": "2026-09-13",
-      "notes": "Cashback Monitor's public comparison pages show the United CARDHOLDER ('ua cc') column only; non-cardholder rates are JS-gated. All rates below except Apple are United credit-card-holder rates. Elevated now: Nike 8 (was 2), Adidas 4 (was 1), Sephora 3 (was 2), Fandango 4 (was 2), Apple 4 (promo, TPG Sep 7). 'Up to' max rates: Best Buy 8, Sam's Club 8, Macy's 3, Expedia 2, Samsung 2 \u2014 actual may be lower by category.",
+      "checked": "2026-09-17",
+      "notes": "Cashback Monitor's public comparison pages show the United CARDHOLDER ('ua cc') column only; non-cardholder rates are JS-gated. All rates below except Apple are United credit-card-holder rates. Elevated now: Nike 8 (was 2), Adidas 4 (was 1), Sephora 3 (was 2), Fandango 4 (was 2), Apple 4 (promo, TPG Sep 7). 'Up to' max rates: Best Buy 8, Sam's Club 8, Macy's 3, Expedia 2, Samsung 2 — actual may be lower by category.",
       "merchants": [
         {
           "name": "Apple",
@@ -406,6 +467,34 @@
           "miles_per_dollar": 2,
           "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/s/",
           "note": "United cardholder rate"
+        },
+        {
+          "name": "Total Wine",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "UA-cardholder rate 1 mile/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/t/"
+        },
+        {
+          "name": "Tire Rack",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "UA-cardholder rate 1 mile/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/t/"
+        },
+        {
+          "name": "Ace Hardware",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "UA-cardholder rate 2 miles/$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Corsair",
+          "miles_per_dollar": 3,
+          "elevated": true,
+          "note": "Elevated from 2 miles/$; requires United credit card (2 without)",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
         }
       ]
     },
@@ -415,10 +504,12 @@
       "url": "https://www.skymilesshopping.com/",
       "sources": [
         "http://content.delta.com/content/www/us/en/skymiles/how-to-earn-miles/skymiles-partners-offers.html",
-        "https://thepointsguy.com/loyalty-programs/delta-skymiles-shopping-portal/"
+        "https://thepointsguy.com/loyalty-programs/delta-skymiles-shopping-portal/",
+        "https://www.cashbackmonitor.com/",
+        "https://evreward.com/"
       ],
-      "checked": "2026-09-13",
-      "notes": "Thin coverage: Cashback Monitor comparison pages carry NO Delta column (only Alaska Atmos, AA, Southwest, United-cardholder); Delta requires per-merchant store pages. Apple 3.5 is an elevated promo (base 1, TPG ~Sep 7). Portal verified live at skymilesshopping.com. Dropped a stale Lenovo 1.5 (EvReward snippet ~109 days old). Remaining merchants unverifiable this pass \u2014 revisit on refresh.",
+      "checked": "2026-09-17",
+      "notes": "Thin coverage: Cashback Monitor comparison pages carry NO Delta column (only Alaska Atmos, AA, Southwest, United-cardholder); Delta requires per-merchant store pages. Apple 3.5 is an elevated promo (base 1, TPG ~Sep 7). Portal verified live at skymilesshopping.com. Dropped a stale Lenovo 1.5 (EvReward snippet ~109 days old). Remaining merchants unverifiable this pass — revisit on refresh.",
       "merchants": [
         {
           "name": "Apple",
@@ -429,6 +520,27 @@
           "name": "Adidas",
           "miles_per_dollar": 3,
           "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Total Wine",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 mile/$",
+          "source": "https://evreward.com/view/totalwine.com?gc=6001006"
+        },
+        {
+          "name": "Tire Rack",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 mile/$",
+          "source": "https://evreward.com/view/tirerack.com"
+        },
+        {
+          "name": "Corsair",
+          "miles_per_dollar": 2,
+          "elevated": true,
+          "note": "Elevated from 1.5 miles/$",
+          "source": "https://www.cashbackmonitor.com/cashback-store/corsair/"
         }
       ]
     },
@@ -438,9 +550,11 @@
       "url": "https://rapidrewardsshopping.southwest.com",
       "sources": [
         "https://rapidrewardsshopping.southwest.com",
-        "http://thepointsguy.com/loyalty-programs/southwest-rapid-rewards-shopping-portal/"
+        "http://thepointsguy.com/loyalty-programs/southwest-rapid-rewards-shopping-portal/",
+        "https://www.cashbackmonitor.com/",
+        "https://evreward.com/"
       ],
-      "checked": "2026-09-13",
+      "checked": "2026-09-17",
       "notes": "Portal merchant pages blocked by EEA interstitial; rates from Cashback Monitor Southwest column (last full update 2026-09-12). Elevated now: Under Armour 5 (base 1), Adidas 3 (base 1), Athleta 3 (base 1), Nike 3 (base 2), Sephora 3 (base 2). Omitted: 'up-to' tiered rates (Best Buy, Home Depot, Macy's, Sam's Club, Samsung), flat-point offers (HelloFresh, Uber Eats, Disney+), blank columns (Dell, IHG, Marriott, Vrbo, Walmart).",
       "merchants": [
         {
@@ -572,6 +686,34 @@
           "name": "Walgreens",
           "miles_per_dollar": 1,
           "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/w/"
+        },
+        {
+          "name": "Total Wine",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 pt./$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/t/"
+        },
+        {
+          "name": "Tire Rack",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 pt./$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/t/"
+        },
+        {
+          "name": "Ace Hardware",
+          "miles_per_dollar": 1,
+          "elevated": false,
+          "note": "1 pt./$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/a/"
+        },
+        {
+          "name": "Corsair",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "2 pt./$",
+          "source": "https://www.cashbackmonitor.com/travel-miles-points-comparison/c/"
         }
       ]
     },
@@ -581,9 +723,10 @@
       "url": "https://creditcards.chase.com/rewards-credit-cards/ultimate-rewards",
       "sources": [
         "https://www.cashbackmonitor.com/",
-        "https://thepointsguy.com/credit-cards/chase-ultimate-rewards-shopping-portal/"
+        "https://thepointsguy.com/credit-cards/chase-ultimate-rewards-shopping-portal/",
+        "https://evreward.com/"
       ],
-      "checked": "2026-09-13",
+      "checked": "2026-09-17",
       "notes": "Rates vary by card (Sapphire column used; Freedom often pays more). Best Buy/Home Depot/Macy's/Sam's Club show 'up to' rates; JSON uses max. Source: Cashback Monitor Chase tables, last full update 2026-09-12, read 2026-09-13.",
       "merchants": [
         {
@@ -739,6 +882,34 @@
           "name": "Walgreens",
           "miles_per_dollar": 1,
           "source": "https://www.cashbackmonitor.com/"
+        },
+        {
+          "name": "Total Wine",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "Freedom 2 pt./$; Sapphire and Ink Preferred 1 pt./$",
+          "source": "https://www.cashbackmonitor.com/credit-card-points-comparison/t/"
+        },
+        {
+          "name": "Tire Rack",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "Freedom 2 pt./$; Sapphire and Ink Preferred 1 pt./$",
+          "source": "https://www.cashbackmonitor.com/credit-card-points-comparison/t/"
+        },
+        {
+          "name": "Ace Hardware",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "Freedom and Ink Preferred 2 pt./$; Sapphire 1 pt./$",
+          "source": "https://www.cashbackmonitor.com/credit-card-points-comparison/a/"
+        },
+        {
+          "name": "Corsair",
+          "miles_per_dollar": 4,
+          "elevated": true,
+          "note": "Freedom 4 pt./$ elevated from 2; Sapphire 2, Ink Preferred 3",
+          "source": "https://www.cashbackmonitor.com/credit-card-points-comparison/c/"
         }
       ]
     },
@@ -748,10 +919,12 @@
       "url": "https://www.rakuten.com",
       "sources": [
         "https://www.rakuten.com/help/article/american-express-membership-rewards-points-faq-360017609253",
-        "https://thepointsguy.com/loyalty-programs/how-to-use-rakuten/"
+        "https://thepointsguy.com/loyalty-programs/how-to-use-rakuten/",
+        "https://www.cashbackmonitor.com/",
+        "https://evreward.com/"
       ],
-      "checked": "2026-09-13",
-      "notes": "1% cash back = 1 MR point/$. Must link eligible Amex MR account; points transfer quarterly (min 501). Elevated now: Nike 6 (was 2), Adidas 4 (was 2), Disney Store 5 (was 2, was 6 earlier this week), Athleta 4 (was 2), Best Buy up to 10 (was 7), Macy's 4 (was 2). Zero-rate merchants (Nordstrom, Home Depot, REI, Lululemon, Wayfair, Walmart) dropped. Some per-merchant source URLs from researcher looked mismatched and were normalized to rakuten shop slugs \u2014 re-verify on next refresh.",
+      "checked": "2026-09-17",
+      "notes": "1% cash back = 1 MR point/$. Must link eligible Amex MR account; points transfer quarterly (min 501). Elevated now: Nike 6 (was 2), Adidas 4 (was 2), Disney Store 5 (was 2, was 6 earlier this week), Athleta 4 (was 2), Best Buy up to 10 (was 7), Macy's 4 (was 2). Zero-rate merchants (Nordstrom, Home Depot, REI, Lululemon, Wayfair, Walmart) dropped. Some per-merchant source URLs from researcher looked mismatched and were normalized to rakuten shop slugs — re-verify on next refresh.",
       "merchants": [
         {
           "name": "Nike",
@@ -897,6 +1070,62 @@
           "name": "Target",
           "miles_per_dollar": 1,
           "source": "https://www.rakuten.com/shop/target"
+        },
+        {
+          "name": "Tire Rack",
+          "miles_per_dollar": 3,
+          "elevated": false,
+          "note": "3 pt./$",
+          "source": "https://www.cashbackmonitor.com/other-reward-points-comparison/t/"
+        },
+        {
+          "name": "Garmin",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "2 pt./$",
+          "source": "https://evreward.com/view/garmin.com"
+        },
+        {
+          "name": "American Eagle",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "2 pt./$",
+          "source": "http://rakuten.com/shop/americaneagle"
+        },
+        {
+          "name": "ASUS",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "Up to 2 pt./$",
+          "source": "https://www.cashbackmonitor.com/other-reward-points-comparison/a/"
+        },
+        {
+          "name": "Ace Hardware",
+          "miles_per_dollar": 4,
+          "elevated": false,
+          "note": "4 pt./$",
+          "source": "https://www.cashbackmonitor.com/other-reward-points-comparison/a/"
+        },
+        {
+          "name": "Seagate",
+          "miles_per_dollar": 2.5,
+          "elevated": false,
+          "note": "2.5 pt./$",
+          "source": "https://www.cashbackmonitor.com/other-reward-points-comparison/s/"
+        },
+        {
+          "name": "Corsair",
+          "miles_per_dollar": 2,
+          "elevated": false,
+          "note": "2 pt./$",
+          "source": "https://www.cashbackmonitor.com/other-reward-points-comparison/c/"
+        },
+        {
+          "name": "Insta360",
+          "miles_per_dollar": 3,
+          "elevated": false,
+          "note": "3 pt./$",
+          "source": "https://www.cashbackmonitor.com/other-reward-points-comparison/i/"
         }
       ]
     }
