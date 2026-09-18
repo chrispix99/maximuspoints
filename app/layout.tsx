@@ -93,6 +93,8 @@ export default async function RootLayout({
             never from who pays us.
           </p>
         </footer>
+        <div data-clingy-footer data-theme="light"></div>
+        <script src="https://production.clingybear.com/footer.js" defer></script>
       </body>
     </html>
   );
